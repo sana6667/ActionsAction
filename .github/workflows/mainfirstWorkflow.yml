@@ -2,7 +2,7 @@ name: my firs workflow
 on: 
   push:
     branches:
-      - name
+      - main
   workflow_dispatch:
 
 jobs:
