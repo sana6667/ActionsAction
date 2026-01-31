@@ -1,0 +1,20 @@
+name: my firs workflow
+on: 
+  push:
+    branches:
+      - name
+  workflow_dispatch:
+
+jobs:
+  MyJobs:
+    runs-on: ubuntu-20.04
+    steps:
+      - run: echo "hello world"
+
+      - name: Checkout
+        uses: actions/checkout@v6.0.2
+      - name: File this repository
+        run: | 
+          echo "Repository ${{ github.repository }} conetd files:"
+          tree
+      
